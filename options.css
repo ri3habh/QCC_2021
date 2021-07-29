@@ -1,0 +1,100 @@
+:root{
+    --dark-background-color: #111111;
+    --dark-background-color-alt: #222222;
+    --dark-trim-color: #333333;
+    --dark-text-color: #eeeeee;
+    --dark-logo-color: #445e93ff;
+    --dark-placeholder-color: #212121;
+    --dark-typing-color: #212121;
+    --font-family: "Cabin", sans-serif;
+}
+#light{
+    color: var(--text-color);
+    background: var(--background-color);
+}
+#dark{
+    color: var(--text-color);
+    background: var(--background-color);
+}
+#auto{
+    color: var(--text-color);
+    background: var(--background-color);
+}
+@media (prefers-color-scheme: dark){
+    body.theme-auto{
+        --background-color: var(--dark-background-color);
+        --text-color: var(--dark-text-color);
+        --logo-color: var(--dark-logo-color);
+        --placeholder-color: var(--dark-placeholder-color);
+        --typing-color: var(--dark-typing-color);
+    }
+}
+html {
+    font-size: 30px;
+  }
+  body {
+    --background-color: #ffffff;
+    --text-color: #202020;
+    --logo-color: #7eb2ddff;
+    --placeholder-color: #4d4242;
+    --typing-color: #1d1c1c;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0 auto;
+    padding: 50px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+    line-height: 150%;
+  }
+  body.theme-dark{
+    --background-color: var(--dark-background-color);
+    --text-color: var(--dark-text-color);
+    --logo-color: var(--dark-logo-color);
+    --placeholder-color: var(--dark-placeholder-color);
+    --typing-color: var(--dark-typing-color);
+}
+  body:not(.ready) #textarea::placeholder,
+  body:not(.ready) #controls {
+    opacity: 0;
+  }
+  body:not(.ready) #controls {
+    visibility: hidden;
+  }
+  #textarea {
+    border: 3px solid;
+    outline: none;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--typing-color);
+  }
+  #textarea::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+    transition: opacity .7s;
+  }
+  #controls {
+    transition: opacity 1s;
+    align-items: center;
+  }
+  #save {
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 15px;
+    color: var(--typing-color);
+  }
+  #go-back-to-home {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    align-items: center;
+  }
+  #go-back-to-home a {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  #go-back-to-home a:hover {
+    border-bottom: 1px solid var(--typing-color);
+  }
+  .body-pm{
+    align-items: center;
+  }

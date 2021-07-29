@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+    <script defer src="todolistworker.js"></script>
+</head>
+<body>
+    <p id="go-back-to-home">
+        <a href="popup.html">Go Back</a>
+    </p>
+    <div class="todo-list-body">
+    <div class="all-tasks">
+        <h2 class="task-list-title">My Task Lists</h2>
+        <ul class="task-list" data-lists>
+        </ul>
+  
+        <form action="" data-new-list-form>
+          <input 
+            type="text"
+            class="new list"
+            data-new-list-input
+            placeholder="new list name"
+            aria-label="new list name"
+          />
+          <button class="btn create" id="btn-new-list" aria-label="create new list">
+            <span class="material-icons" id="add_circle_outline_1">add_circle_outline</span>
+          </button>
+        </form> 
+    </div>
+    <p class="task-count" data-list-count></p>
+
+    <div class="todo-list" data-list-display-container>
+      <div class="todo-header">
+        <h2 class="list-title" data-list-title></h2>
+      </div>
+    
+    <div class="todo-body">
+        <div class="tasks" data-tasks></div>
+    
+        <!-- New Task Creator -->
+        <div class="new-task-creator">
+            <form action="" data-new-task-form>
+                <input 
+                  type="text"
+                  data-new-task-input
+                  class="new task"
+                  placeholder="new task name"
+                  aria-label="new task name"
+                />
+                <button class="btn create" id="btn-new-task" aria-label="create new task">
+                  <span class="material-icons" id="add_circle_outline_2">add_circle_outline</span>
+                </button>
+              </form>
+        </div>
+
+        <!-- Task Deletor -->
+        <div class="delete-stuff">
+          <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+          <button class="btn delete" data-delete-list-button>Delete list</button>
+        </div>
+      </div>
+  </div>
+  </div>
+
+<!-- a template tag dosen't render to the page, but you can access it through javascript -->
+<template id="task-template">
+  <div class="task">
+    <input 
+      type="checkbox"/>
+    <label>
+      <span class="custom-checkbox"></span>
+    </label>
+    </div>
+</template>
+
+<script src="todolist.js"></script>
+
+</body>
+</html>

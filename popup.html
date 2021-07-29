@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!-- <script type="text/javascript" src="hideMenu.js"></script> -->
+</head>
+<body>
+    <div class="main">
+        <header class="header-of-app">
+            <div class="title-of-ting">
+                <div id="todo-date"></div>
+            </div>
+            <!-- <button class="button-navbar" id="button-navbar">Toggle Menu</button> -->
+            <div class="drop-down">
+                <i class="material-icons">brush</i>
+                <!-- or use "palette" instead -->
+            </div> 
+            <select class="selectDisplay" id="selTheme">
+                <option value="light" id="light">Light Mode</option>
+                <option value="dark" id="dark">Dark Mode</option>
+                <option value="auto" id="auto">Auto</option>
+            </select>
+        </header>
+        <div class="bodyyy">
+          <div id="hmm"></div>
+            <div class="navbar">
+                <div class="bar">
+                <ul>
+                    <li>
+                    <a href="todo.html" class="bar2">
+                        <span class="material-icons">fact_check</span>Todo list              
+                    </a>
+                    </li>
+                    <li>
+                      <a href="wallpaper.html" class="bar2">
+                          <span class="material-icons">wallpaper</span>Wallpaper              
+                      </a>
+                      </li>
+                    <li> 
+                    <a href="settings.html" class="bar2">
+                        <span class="material-icons">settings</span>Settings              
+                    </a>
+                    </li>
+                    <li>
+                    <a href="options.html" class="bar1">
+                        <span class="material-icons">block</span>Productivity Mode              
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="body">
+                <div class="body-header">
+                </div> 
+                <!-- Start of Todo List -->
+                
+                    <script type="text/javascript" src="popup.js" ></script>
+                    <script type="text/javascript" src="todo.js"></script>
+                    <div id="todo-date"></div>
+        </div>
+                <p id="paragraph"><i>Made by <a href="https://www.srishabh.ca" target="_blank">Rishabh Sharma</a></i> | <a href="#" target="_blank">More Resources</a></p>
+        </div>
+    </div>
+
+        <script type="text/javascript" src="settings.js" ></script>
+    </div>
+</body>
+</html>
