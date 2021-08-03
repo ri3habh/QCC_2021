@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Spartan:wght@700&display=swap");
+
+h1,h2,h3{
+  font-family: 'Spartan';
+}
+
+.btn{
+  font-family: 'DM Sans';
+}
+
+p{
+  font-family: 'DM Sans';
+}
+
+a{
+  font-family: 'DM Sans';
+}
+
 :root{
     --dark-background-color: #111111;
     --dark-background-color-alt: #222222;

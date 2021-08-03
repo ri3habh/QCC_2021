@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Spartan:wght@700&display=swap");
+
+h2{
+  font-family: 'Spartan';
+}
+
+.btn{
+  font-family: 'DM Sans';
+}
+
+p{
+  font-family: 'DM Sans';
+}
+
 textarea {
-    color: rgb(0, 0, 0);  
+    color: rgb(0, 0, 0);
   }
+
 .textarea-wrapper {
     display: flex;
     overflow: hidden;
@@ -16,7 +32,7 @@ textarea {
   }
   .textarea-bar button {
     background-color: #ddd;
-    font-family: serif;
+    font-family: 'DM Sans';
     font-size: 20px;
     width: 30px;
     display: inline-block;
