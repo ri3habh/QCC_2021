@@ -15,6 +15,22 @@ p{
 
 a{
   font-family: 'DM Sans';
+  color: #274c77;;
+}
+
+a:hover{
+    border-bottom: 1px solid #274c77;
+}
+
+.logo{
+    padding:0px;
+    text-align: center;
+}
+
+.logo-img{
+    width:150px;
+    height:150px;
+
 }
 
 :root{
@@ -182,8 +198,8 @@ body.theme-dark{
     text-decoration: none;
     font-weight: bold;
     font-size: 0.85rem;
-    border-bottom: 1px solid #445e93ff;
-    border-top: 1px solid rgb(87, 114, 167);
+    border-bottom: 1px solid #274c77;
+    border-top: 1px solid #274c77
     /* margin-right: 10px; */
 
 }
@@ -198,8 +214,8 @@ body.theme-dark{
     text-decoration: none;
     font-weight: bold;
     font-size: 0.85rem;
-    border-bottom: 1px solid #445e93ff;
-    border-top: 1px solid rgb(87, 114, 167);
+    border-bottom: 1px solid #274c77;
+    border-top: 1px solid #274c77;
     /* margin-left: 10px; */
 }
 .bar3{
@@ -213,19 +229,20 @@ body.theme-dark{
     text-decoration: none;
     font-weight: bold;
     font-size: 0.85rem;
-    border-bottom: 1px solid #445e93ff;
+    border-bottom: 1px solid #274c77;
 }
-.bar1 .material-icons{
+.bar1 .icons{
+    margin-right: 12px;
+    color: #274c77;
+}
+.bar2 .icons{
+    margin-right: 12px;
+    color: #274c77;
+}
+.bar3 .icons{
     margin-right: 12px;
     align-items: center;
-}
-.bar2 .material-icons{
-    margin-right: 12px;
-    align-items: center;
-}
-.bar3 .material-icons{
-    margin-right: 12px;
-    align-items: center;
+    color: #274c77;
 }
 .bar1:hover{
     background: var(--navbar-color);
